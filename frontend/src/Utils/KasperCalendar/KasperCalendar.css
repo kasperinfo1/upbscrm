@@ -1,0 +1,54 @@
+/* KasperCalendar.css */
+.calendar-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    border-radius: 8px;
+  }
+  
+  .calendar-header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    font-weight: bold;
+  }
+  
+  .calendar-day {
+    width: calc(100% / 7); 
+    height: 1.8rem;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    /* border: 0px solid #ddd; */
+    box-sizing: border-box;
+    cursor: pointer;
+  }
+
+  .calendar-day:hover {
+    background: rgba(0, 0, 255, 0.251);
+  }
+  
+  .calendar-day.empty {
+    background-color: #f0f0f0;
+  }
+  
+  .calendar-day.current {
+    background-color: #0c1196d9; 
+    color: #fefefe;
+  }
+  
+  .holiday-bullet {
+    width: 8px;
+    height: 8px;
+    background-color: #5a93f5; /* Bullet color for holidays */
+    border-radius: 50%;
+    margin-top: 2px; /* Adjust as needed */
+  }
+  
+  .holiday-info {
+    font-size: 0.8rem;
+    color: #333;
+    margin-top: 2px; /* Space between bullet and holiday type */
+  }
+  
